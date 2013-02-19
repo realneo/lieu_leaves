@@ -14,11 +14,13 @@
         </script>
     </head>
     <body>
+        <div id="lieu_leave">
+            <h1 align="center">Islamic Help Tanzania Management Tool</h1>
         <form id='lieu_form' name="lieu_form" method="post" action="includes/add_lieu_process.php">
             <table>
                 <caption> LIEU LEAVES </caption>
                 <tr>
-                    <th>Employee Name</th>
+                    <th width="130px">Employee Name</th>
                     <td>
                         <select name="employee" id="employee">
                             <?php 
@@ -103,15 +105,15 @@
                 </tr>
                 <tr>
                     <th>Details</th>
-                    <td><textarea name="details" id="details"></textarea></td>
+                    <td><textarea name="details" id="details" cols="55" rows="5"></textarea></td>
                 </tr>
                 <tr>
                     <th>Remarks</th>
-                    <td><textarea name="remarks" id="remarks"></textarea></td>
+                    <td><textarea name="remarks" id="remarks" cols="55" rows="5"></textarea></td>
                 </tr>
                 <tr>
                     <th></th>
-                    <td><input type="checkbox" name="agree" id="agree"/> By Clicking this, that means you agree to all the above information.</td>
+                    <td><input type="checkbox" name="agree" id="agree"/> <span class='error'>By Clicking this, that means you agree to all the above information.</span></td>
                 </tr>
                 <tr>
                     <th></th>
@@ -120,5 +122,7 @@
             </table>
             <div id="feedback"></div><!-- feedback -->
         </form>
+        </div><!-- leiu_leave -->
+        <div id="footer">Design & Developed by Yoteyote.com</div>
     </body>
 </html>
